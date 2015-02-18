@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Duplicator (2)</title>
+	
+   </head>
+   <body id= body>
+     <form>
+       Escribe el color de fondo que desees : <input type="text" id="text"/>
+     </form>
+
+     <script type="text/javascript" charset="utf-8">
+       formElement = document.getElementById('text');
+       handler = function (e) {
+		document.getElementById("body").style.backgroundColor = this.value;
+       }
+       formElement.addEventListener('input', handler);
+     </script>
+  </body>
+</html>
